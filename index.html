@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Video Analytics App-dSights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Hurricane&family=Merriweather:ital,wght@1,700&family=Oswald:wght@500&family=Roboto+Slab&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px;
+      /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999;width: 1400px;">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand effect" href="index.html"><span><img id="logoo" src="dsights logo.png" alt="avatar-hero">
+          <b>Video Analytics App</b></a></span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#pblm">Problem</a></li>
+        <li><a href="#sol">Solution</a></li>
+        <li><a href="#demo">Result</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 id="pblm">VIDEO ANALYTICS APP</h1>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="ghi"><b><u>Context</b></u></h1>
+    <table>
+      <tr>
+        <th>
+<h3 style="font-weight: 500; margin:20px;">A trainee can learn an activity from a trainer or coaches remotely 
+  by watching videos through an online platform. It would be very challenging for a trainer or teacher to evaluate a very large number of trainee by watching their video and scoring their performance.
+  A technology driven solutions which scales would be an ideal option. 
+  </h3></th>
+<th>
+    <div id="videoDiv">
+      <video id="video" width="770" height="360" controls>
+        <source src="APP-VIDEO-1404.mp4">
+      </video>
+    </div>
+    </th>
+    </tr>
+  </table>
+  </div>
+
+
+  <div id="sol">
+    <br>
+    <br>
+
+    <h5 class="ghi"><b><u>Approach</u></h5></b>
+  
+    <table>
+      <tr>
+        <th>
+    <h1>
+      <span style="margin:10px;">&#128073;&nbsp;AI driven  automated Evaluation
+      engine to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;measure
+     trainee’s performance
+      <br><br>
+      &#128073;&nbsp;Web application 
+        acccessible from anywhere &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anytime
+        <br><br>
+        &#128073;Facilitate & Display
+        Comparison Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;report
+        <br><br>
+      &#128073;A roadmap for 
+        Athlete to
+        improve
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performance
+    </h1></th></span>
+<th>
+  <center>
+    <img id="iconimg" src="aws.png">  
+    <img id="iconimg" src="docker.png">
+    <img id="iconimg" src="frontend.jpg">
+    <img id="iconimg" src="py.jpg">
+    <img id="iconimg" src="tensorflow.png">
+    </center>
+ </th>
+  </tr>
+  </table>
+
+  <div id="demo">
+    <h1 class="ghi"><b><u>Solution</u></h1></b>
+
+    <!--<div id="videoDiv">
+    <video id="video"
+            width="480" height="360" 
+            controls>
+        <source src="exp_vid.mp4">
+    </video>
+</div>-->
+
+    <div id="solpara" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">Deep Learning and  TF Pose-Net based Performance Evaluation engine,  highly scalable, robust and can support trainer, coaches and teachers in different domain such as sports, body works, dance, sign language communications etc. remotely
+      <br><br><br><br>
+      <div class="options" style="margin-left: 70px;">
+
+        <h1 id="selectlbl"><u>Select A Set</u></h1>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        <input name="option" type="radio" id="click" onclick="btn()" class="hide" >
+        <label for="click">SET1</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+        <input name="option" type="radio" id="touch" onclick="btn()" class="hide">
+        <label for="touch">SET2</label>
+      </div>
+    </div>
+
+    
+    <div id="proscore" style="margin-top: 300px;"></div>
+    <div id="proscoree"></div>
+   
+
+    <div id="contact">
+      <footer class="footer" style="margin-top: 200px;">
+        <div class="container">
+          <div class="row">
+            <a href="#" class="effect footer-title" style="color:#bc3b6f;">dSights</a><br>
+            <b>Video Analytics App &copy; 2022. All Rights Reserved, Designed by dSights</b><br>  
+            <a href="https://www.dsightsonline.com/"><img src="globe.png" style="width: 30px;"></a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="mailto:info@dsightsonline.com?Subject=Hello"><img src="mail.png" style="width:30px;height:35px;"></a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="tel:8951576042"><img src="phone-call.png" style="width:30px;height:28px;"></a>
+          </div> <!-- end row -->
+        </div> <!-- End Container -->
+      </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
